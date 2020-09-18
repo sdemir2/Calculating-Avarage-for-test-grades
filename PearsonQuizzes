@@ -1,0 +1,162 @@
+import java.util.Scanner;
+
+public class TestAvgAndGrade {
+
+	public static void main(String[] args) {
+
+		determineGrade();
+
+	}
+
+	public static void determineGrade() {
+
+		int student1;
+		int student2;
+		int student3;
+		int student4;
+		int student5;
+		float calcAvarage;
+
+		char gradeA = 'A';
+		char gradeB = 'B';
+		char gradeC = 'C';
+		char gradeD = 'D';
+		char gradeF = 'F';
+
+		@SuppressWarnings("resource")
+		Scanner inAvarage = new Scanner(System.in);
+
+		System.out.print(" Enter test grade for student 1: ");
+		student1 = inAvarage.nextInt();
+
+		System.out.print(" Enter test grade for student 2: ");
+		student2 = inAvarage.nextInt();
+
+		System.out.print(" Enter test grade for student 3: ");
+		student3 = inAvarage.nextInt();
+
+		System.out.print(" Enter test grade for student 4: ");
+		student4 = inAvarage.nextInt();
+
+		System.out.print(" Enter test grade for student 5: ");
+		student5 = inAvarage.nextInt();
+
+		// The letter grades
+		System.out.println(" The letter grades are as follows:");
+
+		// Student 1
+
+		if (student1 > 89 && student1 < 101) {
+			System.out.println("Student 1: " + gradeA);
+		}
+
+		else if (student1 > 79 && student1 < 90) {
+			System.out.println("Student 1: " + gradeB);
+		}
+
+		else if (student1 > 69 && student1 < 80) {
+			System.out.println("Student 1: " + gradeC);
+		}
+
+		else if (student1 > 59 && student1 < 70) {
+			System.out.println("Student 1: " + gradeD);
+		}
+
+		else
+			System.out.println("Student 1: " + gradeF);
+
+		// Student 2
+
+		if (student2 > 89 && student2 < 101) {
+			System.out.println("Student 2: " + gradeA);
+		}
+
+		else if (student2 > 79 && student2 < 90) {
+			System.out.println("Student 2: " + gradeB);
+		}
+
+		else if (student2 > 69 && student2 < 80) {
+			System.out.println("Student 2: " + gradeC);
+		}
+
+		else if (student2 > 59 && student2 < 70) {
+			System.out.println("Student 2: " + gradeD);
+		}
+
+		else
+			System.out.println("Student 2: " + gradeF);
+
+		// Student 3
+
+		if (student3 > 89 && student3 < 101) {
+			System.out.println("Student 3: " + gradeA);
+		}
+
+		else if (student3 > 79 && student3 < 90) {
+			System.out.println("Student 3: " + gradeB);
+		}
+
+		else if (student3 > 69 && student3 < 80) {
+			System.out.println("Student 3: " + gradeC);
+		}
+
+		else if (student3 > 59 && student3 < 70) {
+			System.out.println("Student 3: " + gradeD);
+		}
+
+		else
+			System.out.println("Student 3: " + gradeF);
+
+		// Student 4
+
+		if (student4 > 89 && student4 < 101) {
+			System.out.println("Student 4: " + gradeA);
+		}
+
+		else if (student4 > 79 && student4 < 90) {
+			System.out.println("Student 4: " + gradeB);
+		}
+
+		else if (student4 > 69 && student4 < 80) {
+			System.out.println("Student 4: " + gradeC);
+		}
+
+		else if (student4 > 59 && student4 < 70) {
+			System.out.println("Student 4: " + gradeD);
+		}
+
+		else
+			System.out.println("Student 4: " + gradeF);
+
+		// Student 5
+
+		if (student5 > 89 && student5 < 101) {
+			System.out.println("Student 5: " + gradeA);
+		}
+
+		else if (student5 > 79 && student5 < 90) {
+			System.out.println("Student 5: " + gradeB);
+		}
+
+		else if (student5 > 69 && student5 < 80) {
+			System.out.println("Student 5: " + gradeC);
+		}
+
+		else if (student5 > 59 && student5 < 70) {
+			System.out.println("Student 5: " + gradeD);
+		}
+
+		else
+			System.out.println("Student 5: " + gradeF);
+		
+		// The calculation for average of the grades
+
+		calcAvarage = (student1 + student2 + student3 + student4 + student5) / 5;
+
+		System.out.printf("The average grade was: %.2f", calcAvarage);
+		System.out.println("");
+
+		// End the determining grades
+		return;
+	}
+}
